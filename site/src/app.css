@@ -25,6 +25,15 @@ p{
   text-decoration-line: underline;
   text-decoration-thickness: 5px;
 }
+.subtitle {
+  font-family: "Anton", system-ui;
+  font-weight: 400;
+  color: #9b2525;
+  font-size: 10vh;
+  text-decoration-line: underline;
+  text-decoration-thickness: 9px;
+
+}
 .title {
   font-family: "Anton", system-ui;
   font-weight: 400;
@@ -40,16 +49,18 @@ svg {
 
 
 .circut {
-    stroke-dasharray: 50;   /* length of visible "segment" */
-    stroke-dashoffset: 70000;
+    stroke-dasharray: 200;   /* length of visible "segment" */
+    stroke-dashoffset: 0;
     animation: flow 3s linear infinite;
     stroke-opacity: 1;
 }
-
-  @keyframes flow {
-    to {
-      stroke-dashoffset: -400; /* shifts dash forward */
-    }
+.robothead {
+  stroke: #9b2525 !important;
+}
+@keyframes flow {
+  to {
+    stroke-dashoffset: -400; /* shifts dash forward */
+  }
 }
 
 
@@ -64,4 +75,18 @@ svg {
 
 .ripple {
     animation: ripple var(--duration, 2s) ease calc(var(--i, 0) * 0.2s) infinite;
+}
+.button {
+  background-color: rgb(0, 0, 2);
+  color: white; 
+  width: 10rem;
+  height: 5rem;
+  border-radius: 1vh;
+  font-weight: 900; 
+  color: oklch(83.452% 0.09159 19.125);
+  border: 6px solid #9b2525;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5vh;
 }

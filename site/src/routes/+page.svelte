@@ -16,12 +16,22 @@
             <span class="font-bold embold mx-[1.5vh]">robot,</span>
             <p> get a grant to build it</p>
             <span class="font-bold embold mx-[1.5vh]">in real life.</span>
+            
 
         </div> 
-        <div class="absolute z-1 fill-black opacity-50">
-            <Circuits />
-            <RobotHead />
+        <div class="mt-[5vh] flex flex-row z-10 gap-5">
+            <a href="https://hackclub.com" class="button">RSVP</a>
         </div>
+        <div class="absolute z-1 fill-black opacity-50 h-[100vh] overflow-hidden">
+            <Circuits />
+        </div>
+        <div class="absolute top-[100vh] mb-[5vh] z-2">
+            <div class="flex flex-row mt-[2vh]">
+                <RobotHead />
+                <div class="subtitle mx-[2vw] mb-[1vh]">FAQ</div>
+                <RobotHead />
+            </div>
+        </div> 
     </div>
     
 </div>

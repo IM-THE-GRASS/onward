@@ -1,4 +1,4 @@
-<svg width="1920" height="1080" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg class="min-w-[100vw] min-h-[100vh]" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
 <g clip-path="url(#clip0_1_2)">
 <path class="circut" d="M882 633H809L718.5 534.5V416.5L757.5 367V286L625 152.5H550L443.5 47.5" stroke="#9b2525" stroke-width="7"/>
 <path class="circut" d="M884 660.5H796L688.5 542.5V400L726.5 354.5V293L616.5 180.5H543L376.5 25.5" stroke="#9b2525" stroke-width="7"/>
