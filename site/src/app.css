@@ -1,0 +1,67 @@
+@import 'tailwindcss';
+.pixelated {
+    image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
+    image-rendering: -moz-crisp-edges;          /* Firefox                        */
+    image-rendering: -o-crisp-edges;            /* Opera                          */
+    image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+    image-rendering: pixelated;                 /* Universal support since 2021   */
+    image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
+    -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
+}
+
+p{
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 500;
+  color:  oklch(67.184% 0.21556 25.099);
+  font-size: 2.5vh;
+  font-style: normal;
+}
+.embold{
+  font-weight: 1000;
+  font-family: "IBM Plex Mono", monospace;
+  color:  oklch(83.452% 0.09159 19.125);
+  font-size: 3vh;
+  font-style: italic;
+  text-decoration-line: underline;
+  text-decoration-thickness: 5px;
+}
+.title {
+  font-family: "Anton", system-ui;
+  font-weight: 400;
+  color: #9b2525;
+  font-size: 20vh;
+  text-decoration-line: underline;
+  text-decoration-thickness: 9px;
+}
+svg {
+  background: transparent;
+}
+
+
+
+.circut {
+    stroke-dasharray: 50;   /* length of visible "segment" */
+    stroke-dashoffset: 70000;
+    animation: flow 3s linear infinite;
+    stroke-opacity: 1;
+}
+
+  @keyframes flow {
+    to {
+      stroke-dashoffset: -400; /* shifts dash forward */
+    }
+}
+
+
+@keyframes ripple {
+    0%, 100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(0.9);
+    }
+}
+
+.ripple {
+    animation: ripple var(--duration, 2s) ease calc(var(--i, 0) * 0.2s) infinite;
+}
